@@ -1,0 +1,52 @@
+# Лицензии готовых картинок
+
+- birthday_03.jpg: File:Icing around Cherry Topping on a Birthday Cake with Candles.jpg — CC0 — Brassluff — https://commons.wikimedia.org/wiki/File:Icing_around_Cherry_Topping_on_a_Birthday_Cake_with_Candles.jpg
+- birthday_04.jpg: File:Balloons Colorful Shooting Gallery Folk Festival.jpg — CC0 — Hans Braxmeier — https://commons.wikimedia.org/wiki/File:Balloons_Colorful_Shooting_Gallery_Folk_Festival.jpg
+- birthday_05.jpg: File:Uninflated colorful balloons.jpg — CC0 — Fumikas Sagisavas — https://commons.wikimedia.org/wiki/File:Uninflated_colorful_balloons.jpg
+- birthday_06.jpg: File:Colorful hot air balloon ZK-OAK overhead.jpg — Public domain — Pseudopanax at English Wikipedia — https://commons.wikimedia.org/wiki/File:Colorful_hot_air_balloon_ZK-OAK_overhead.jpg
+- newyear_01.jpg: File:Decorated christmas tree (america).jpg — CC0 — JoyD Smiths PTMr8 — https://commons.wikimedia.org/wiki/File:Decorated_christmas_tree_(america).jpg
+- newyear_06.jpg: File:US Navy 070704-N-0879R-014 A fireworks display illuminates the night sky over Naval Station Pearl Harbor.jpg — Public domain — U.S. Navy photo by Chief Mass Communication Specialist David Rush — https://commons.wikimedia.org/wiki/File:US_Navy_070704-N-0879R-014_A_fireworks_display_illuminates_the_night_sky_over_Naval_Station_Pearl_Harbor.jpg
+- newyear_07.jpg: File:Snowy Forest Path in Winter.jpg — CC0 — Fagev869 — https://commons.wikimedia.org/wiki/File:Snowy_Forest_Path_in_Winter.jpg
+- newyear_08.jpg: File:Snowy forest in Austria (Unsplash).jpg — CC0 — Emily Morter emilymorter — https://commons.wikimedia.org/wiki/File:Snowy_forest_in_Austria_(Unsplash).jpg
+- march8_01.jpg: File:Tulip-bouquet-vienna (Unsplash).jpg — CC0 — Gábor Juhász juhg — https://commons.wikimedia.org/wiki/File:Tulip-bouquet-vienna_(Unsplash).jpg
+- march8_02.jpg: File:Tulips from a lover (Unsplash).jpg — CC0 — Brigitte Tohm brigittetohm — https://commons.wikimedia.org/wiki/File:Tulips_from_a_lover_(Unsplash).jpg
+- march8_03.jpg: File:Woman holding a bouquet of tulips (Rawpixel.com 2017-04-27 Unsplash pgi0LPOM FI).jpg — CC0 — rawpixel.com rawpixel — https://commons.wikimedia.org/wiki/File:Woman_holding_a_bouquet_of_tulips_(Rawpixel.com_2017-04-27_Unsplash_pgi0LPOM_FI).jpg
+- march8_04.jpg: File:Mimosa Pudica Linn-Flower2.jpg — CC0 — Manuspanicker — https://commons.wikimedia.org/wiki/File:Mimosa_Pudica_Linn-Flower2.jpg
+- march8_05.jpg: File:Mimosa nuttallii flowers and buds.jpg — CC0 — Wiley.andrew.r — https://commons.wikimedia.org/wiki/File:Mimosa_nuttallii_flowers_and_buds.jpg
+- march8_06.jpg: File:Mimosa pudica flower 3.jpg — CC0 — NonNerd — https://commons.wikimedia.org/wiki/File:Mimosa_pudica_flower_3.jpg
+- march8_07.jpg: File:Olga Wisinger-Florian – Spring Blossom.jpg — Public domain — Olga Wisinger-Florian — https://commons.wikimedia.org/wiki/File:Olga_Wisinger-Florian_%E2%80%93_Spring_Blossom.jpg
+- march8_08.jpg: File:Cherry blossom buds 1.jpg — Public domain — W.carter — https://commons.wikimedia.org/wiki/File:Cherry_blossom_buds_1.jpg
+- love_01.jpg: File:Red Roses Rosacea.jpg — CC0 — Dharshini Vinayagam — https://commons.wikimedia.org/wiki/File:Red_Roses_Rosacea.jpg
+- love_02.jpg: File:The Beauty of Red Roses 02.jpg — CC0 — Kryesmin — https://commons.wikimedia.org/wiki/File:The_Beauty_of_Red_Roses_02.jpg
+- love_03.jpg: File:The Beauty of Red Roses 01.jpg — CC0 — Kryesmin — https://commons.wikimedia.org/wiki/File:The_Beauty_of_Red_Roses_01.jpg
+- love_04.jpg: File:Rainbow bead necklace - heart shaped.jpg — CC0 — Brainy J — https://commons.wikimedia.org/wiki/File:Rainbow_bead_necklace_-_heart_shaped.jpg
+- love_05.jpg: File:Heart shape puppy.jpg — CC0 — Monikaa Baskar — https://commons.wikimedia.org/wiki/File:Heart_shape_puppy.jpg
+- love_07.jpg: File:Romantic Sunset, Maine, by Jonas Lie.jpg — Public domain — Jonas Lie — https://commons.wikimedia.org/wiki/File:Romantic_Sunset,_Maine,_by_Jonas_Lie.jpg
+- love_08.jpg: File:Sunset romantic (Unsplash).jpg — CC0 — Aziz Acharki acharki95 — https://commons.wikimedia.org/wiki/File:Sunset_romantic_(Unsplash).jpg
+- love_09.jpg: File:Dark silhouette of a romantic couple.jpg — CC0 — dimitrisvetsikas1969 — https://commons.wikimedia.org/wiki/File:Dark_silhouette_of_a_romantic_couple.jpg
+- flowers_01.jpg: File:Poppies bouquet 2017 G1.jpg — Public domain — George Chernilevsky — https://commons.wikimedia.org/wiki/File:Poppies_bouquet_2017_G1.jpg
+- flowers_02.jpg: File:Flower Bouquet-2.jpg — CC0 — David Condrey — https://commons.wikimedia.org/wiki/File:Flower_Bouquet-2.jpg
+- flowers_03.jpg: File:The Bouquet, by Arthur Rackham.jpg — Public domain — Arthur Rackham — https://commons.wikimedia.org/wiki/File:The_Bouquet,_by_Arthur_Rackham.jpg
+- flowers_04.jpg: File:Field of daisies at Betteshanger.jpg — CC0 — Digihum — https://commons.wikimedia.org/wiki/File:Field_of_daisies_at_Betteshanger.jpg
+- flowers_05.jpg: File:Field of Yellow Daisies by Ester Livingston (38038591712).jpg — Public domain — blmcalifornia — https://commons.wikimedia.org/wiki/File:Field_of_Yellow_Daisies_by_Ester_Livingston_(38038591712).jpg
+- flowers_06.jpg: File:Field of Yellow Daisies by Esther Livingston (37360009694).jpg — Public domain — blmcalifornia — https://commons.wikimedia.org/wiki/File:Field_of_Yellow_Daisies_by_Esther_Livingston_(37360009694).jpg
+- flowers_07.jpg: File:Syringa microphylla 'Superba' flowers at Hulda Klager Lilac Gardens.jpg — CC0 — Dcoetzee — https://commons.wikimedia.org/wiki/File:Syringa_microphylla_%27Superba%27_flowers_at_Hulda_Klager_Lilac_Gardens.jpg
+- flowers_08.jpg: File:Albizia julibrissin flowers at Hulda Klager Lilac Gardens.jpg — CC0 — Dcoetzee — https://commons.wikimedia.org/wiki/File:Albizia_julibrissin_flowers_at_Hulda_Klager_Lilac_Gardens.jpg
+- flowers_09.jpg: File:Albizia julibrissin flowers closeup at Hulda Klager Lilac Gardens.jpg — CC0 — Dcoetzee — https://commons.wikimedia.org/wiki/File:Albizia_julibrissin_flowers_closeup_at_Hulda_Klager_Lilac_Gardens.jpg
+- nature_01.jpg: File:Autumn Forest Pathway with Fallen Leaves.jpg — CC0 — Tojiwiv87 — https://commons.wikimedia.org/wiki/File:Autumn_Forest_Pathway_with_Fallen_Leaves.jpg
+- nature_02.jpg: File:Autumn Forest (201072635).jpeg — CC0 — 
+Gergő Gulyás — https://commons.wikimedia.org/wiki/File:Autumn_Forest_(201072635).jpeg
+- nature_03.jpg: File:Magic forest autumn leaves Olympic NP.jpg — CC0 — PixiePossum — https://commons.wikimedia.org/wiki/File:Magic_forest_autumn_leaves_Olympic_NP.jpg
+- nature_04.jpg: File:Moraine Lake 17092005.jpg — Public domain — Gorgo — https://commons.wikimedia.org/wiki/File:Moraine_Lake_17092005.jpg
+- nature_06.jpg: File:Sunset at Sea MET DT235919.jpg — CC0 — John Singer Sargent — https://commons.wikimedia.org/wiki/File:Sunset_at_Sea_MET_DT235919.jpg
+- nature_08.jpg: File:Gustav Klimt, Birch Forest, 1903 - Paul G. Allen Collection.jpg — Public domain — Gustav Klimt — https://commons.wikimedia.org/wiki/File:Gustav_Klimt,_Birch_Forest,_1903_-_Paul_G._Allen_Collection.jpg
+- nature_09.jpg: File:Birch forest Gullmarsskogen 1.jpg — Public domain — W.carter — https://commons.wikimedia.org/wiki/File:Birch_forest_Gullmarsskogen_1.jpg
+- nature_10.jpg: File:Birch forest Gullmarsskogen 4.jpg — Public domain — W.carter — https://commons.wikimedia.org/wiki/File:Birch_forest_Gullmarsskogen_4.jpg
+- animals_02.jpg: File:A kitten in the hand (Flickr).jpg — CC0 — Leo Rodman — https://commons.wikimedia.org/wiki/File:A_kitten_in_the_hand_(Flickr).jpg
+- animals_03.jpg: File:Ginger kitten with an orange rubber rugby.jpg — CC0 — Aiaikz — https://commons.wikimedia.org/wiki/File:Ginger_kitten_with_an_orange_rubber_rugby.jpg
+- animals_05.jpg: File:Fawn and white Welsh Corgi puppy standing on rear legs and sticking out the tongue.jpg — CC0 — Huoadg5888Minor edits made by Subsidiary account — https://commons.wikimedia.org/wiki/File:Fawn_and_white_Welsh_Corgi_puppy_standing_on_rear_legs_and_sticking_out_the_tongue.jpg
+- animals_06.jpg: File:Rottweiler puppy -21603071920.jpg — CC0 — Vlaaitje — https://commons.wikimedia.org/wiki/File:Rottweiler_puppy_-21603071920.jpg
+- animals_07.jpg: File:Japanese Squirrel edited version.jpg — Public domain — Ma2bara, Edited by Laitche — https://commons.wikimedia.org/wiki/File:Japanese_Squirrel_edited_version.jpg
+- victory_01.jpg: File:Józef Pankiewicz - Red carnations (Still life with a blue vase) - MP 664 MNW - National Museum in Warsaw.jpg — Public domain — Józef Pankiewicz — https://commons.wikimedia.org/wiki/File:J%C3%B3zef_Pankiewicz_-_Red_carnations_(Still_life_with_a_blue_vase)_-_MP_664_MNW_-_National_Museum_in_Warsaw.jpg
+- victory_02.jpg: File:Léon Bonvin - Vase of Red and White Carnations - Walters 371503 (2).jpg — Public domain — Léon Bonvin — https://commons.wikimedia.org/wiki/File:L%C3%A9on_Bonvin_-_Vase_of_Red_and_White_Carnations_-_Walters_371503_(2).jpg
+- victory_03.jpg: File:Jacob van Hulsdonck - Tulips and carnations in an earthenware vase.jpg — Public domain — Jacob van Hulsdonck — https://commons.wikimedia.org/wiki/File:Jacob_van_Hulsdonck_-_Tulips_and_carnations_in_an_earthenware_vase.jpg

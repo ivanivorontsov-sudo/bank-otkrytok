@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.Otkrytki" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#FFFDF6F0</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <color name="ic_launcher_background">#FFFF7A59</color>
+</resources>
