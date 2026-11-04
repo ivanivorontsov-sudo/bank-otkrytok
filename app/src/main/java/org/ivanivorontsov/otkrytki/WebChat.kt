@@ -168,12 +168,12 @@ fun WebChatScreen(settings: Settings, prompt: String, onImage: (Bitmap) -> Unit,
         Text(status, Modifier.padding(horizontal = 12.dp, vertical = 4.dp))
         AndroidView(modifier = Modifier.fillMaxSize(), factory = { ctx ->
             WebView(ctx).apply {
-                settings.javaScriptEnabled = true
-                settings.domStorageEnabled = true
-                settings.databaseEnabled = true
-                settings.loadWithOverviewMode = true
-                settings.useWideViewPort = true
-                settings.javaScriptCanOpenWindowsAutomatically = true
+                this.settings.javaScriptEnabled = true
+                this.settings.domStorageEnabled = true
+                this.settings.databaseEnabled = true
+                this.settings.loadWithOverviewMode = true
+                this.settings.useWideViewPort = true
+                this.settings.javaScriptCanOpenWindowsAutomatically = true
                 CookieManager.getInstance().setAcceptCookie(true)
                 CookieManager.getInstance().setAcceptThirdPartyCookies(this, true)
                 webViewClient = WebViewClient()
