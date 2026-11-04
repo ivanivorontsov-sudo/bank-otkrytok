@@ -131,12 +131,15 @@ fun stockCats(o: Occasion): List<String> = when (o.id) {
     "birthday" -> listOf("birthday", "flowers", "animals")
     "newyear" -> listOf("newyear")
     "march8" -> listOf("march8", "flowers")
-    "feb23" -> listOf("nature", "newyear")
+    "feb23" -> listOf("feb23", "nature")
+    "wedding" -> listOf("wedding", "love", "flowers")
+    "condolence" -> listOf("condolence")
     "victory" -> listOf("victory")
     "love" -> listOf("love", "flowers")
     "friends" -> listOf("animals", "flowers", "nature")
     "thanks" -> listOf("flowers", "march8")
-    "support", "nature" -> listOf("nature")
+    "support" -> listOf("nature", "flowers")
+    "nature" -> listOf("nature", "animals")
     "poems" -> listOf("nature", "flowers")
     else -> emptyList()
 }
@@ -145,19 +148,19 @@ fun loadAsset(ctx: Context, path: String): Bitmap = ctx.assets.open(path).use { 
 
 fun shareFile(ctx: Context, f: File) {
     val uri = FileProvider.getUriForFile(ctx, ctx.packageName + ".files", f)
-    val i = Intent(Intent.ACTION_SEND).setType("image/png").putExtra(Intent.EXTRA_STREAM, uri).addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+    val i = Intent(Intent.ACTION_SEND).setType("image/jpeg").putExtra(Intent.EXTRA_STREAM, uri).addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
     ctx.startActivity(Intent.createChooser(i, "Отправить открытку"))
 }
 
 fun saveToPhone(ctx: Context, b: Bitmap): Boolean {
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) return false
     val v = ContentValues().apply {
-        put(MediaStore.Images.Media.DISPLAY_NAME, "otkrytka_${System.currentTimeMillis()}.png")
-        put(MediaStore.Images.Media.MIME_TYPE, "image/png")
+        put(MediaStore.Images.Media.DISPLAY_NAME, "otkrytka_${System.currentTimeMillis()}.jpg")
+        put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
         put(MediaStore.Images.Media.RELATIVE_PATH, "Pictures/Открытки")
     }
     val uri = ctx.contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, v) ?: return false
-    ctx.contentResolver.openOutputStream(uri)?.use { b.compress(Bitmap.CompressFormat.PNG, 100, it) }
+    ctx.contentResolver.openOutputStream(uri)?.use { it.write(Export.jpeg(b)) }
     return true
 }
 
@@ -180,7 +183,7 @@ fun HomeScreen(onOpen: (Screen) -> Unit) {
     val ctx = LocalContext.current
     val cards = remember { Gallery.list(ctx) }
     Scaffold(topBar = {
-        TopAppBar(title = { Text("Открытки", fontWeight = FontWeight.Bold) }, actions = {
+        TopAppBar(title = { Text("Банк открыток", fontWeight = FontWeight.Bold) }, actions = {
             IconButton(onClick = { onOpen(Screen.About) }) { Icon(Icons.Default.Info, "О приложении") }
             IconButton(onClick = { onOpen(Screen.Settings) }) { Icon(Icons.Default.Settings, "Настройки") }
         })
@@ -247,14 +250,14 @@ fun EditorScreen(occasion: Occasion, onBack: () -> Unit, onSaved: (File) -> Unit
             OutlinedButton(onClick = {
                 val b = base ?: return@OutlinedButton
                 scope.launch {
-                    val f = withContext(Dispatchers.IO) { val out = renderCard(b, style); File(ctx.cacheDir, "share.png").also { f -> f.outputStream().use { out.compress(Bitmap.CompressFormat.PNG, 100, it) } } }
+                    val f = withContext(Dispatchers.IO) { val out = renderCard(b, style); File(ctx.cacheDir, "otkrytka.jpg").also { f -> f.writeBytes(Export.jpeg(out)) } }
                     shareFile(ctx, f)
                 }
             }, modifier = Modifier.weight(1f)) { Icon(Icons.Default.Share, null); Spacer(Modifier.width(6.dp)); Text("Отправить") }
             Button(onClick = {
                 val b = base ?: return@Button
                 scope.launch {
-                    val f = withContext(Dispatchers.IO) { val out = renderCard(b, style); File(Gallery.dir(ctx), "card_${System.currentTimeMillis()}.png").also { f -> f.outputStream().use { out.compress(Bitmap.CompressFormat.PNG, 100, it) } } }
+                    val f = withContext(Dispatchers.IO) { val out = renderCard(b, style); File(Gallery.dir(ctx), "card_${System.currentTimeMillis()}.jpg").also { f -> f.writeBytes(Export.jpeg(out)) } }
                     Toast.makeText(ctx, "Сохранено в «Мои открытки»", Toast.LENGTH_SHORT).show()
                     onSaved(f)
                 }
@@ -298,9 +301,20 @@ fun EditorScreen(occasion: Occasion, onBack: () -> Unit, onSaved: (File) -> Unit
             }
             when (tab) {
                 0 -> {
-                    val qs = Quotes.all(ctx).filter { it.category in occasion.poemCategories }.ifEmpty { Quotes.all(ctx) }
+                    val qs = remember { poemsFor(Quotes.all(ctx), occasion) }
+                    var shown by remember { mutableIntStateOf(15) }
                     Column(Modifier.padding(vertical = 6.dp)) {
-                        qs.forEach { q -> Suggestion(q.text, "«${q.title}»") { style = style.copy(text = q.text, aiText = false) } }
+                        Button(onClick = {
+                            busy = "ИИ подбирает стихотворение…"
+                            scope.launch {
+                                try { val q = qs[Ai.pickPoem(settings, occasion.title, "", qs.take(60))]; style = style.copy(text = q.text, aiText = false, size = if (q.text.length > 250) 0.04f else style.size); Toast.makeText(ctx, "Выбрано: «${q.title}»", Toast.LENGTH_SHORT).show() }
+                                catch (e: Exception) { val q = qs.random(); style = style.copy(text = q.text, aiText = false); Toast.makeText(ctx, "ИИ недоступен, выбрал случайное: «${q.title}»", Toast.LENGTH_LONG).show() }
+                                busy = null
+                            }
+                        }) { Text("✨ Подобрать стих с ИИ") }
+                        Text("Стихи Ивана Воронцова: ${qs.size}", style = MaterialTheme.typography.bodySmall, color = Color.Gray)
+                        qs.take(shown).forEach { q -> Suggestion(q.text, "«${q.title}»") { style = style.copy(text = q.text, aiText = false, size = if (q.text.length > 250) 0.04f else style.size) } }
+                        if (shown < qs.size) TextButton(onClick = { shown += 30 }) { Text("Показать ещё (${qs.size - shown})") }
                     }
                 }
                 1 -> Column(Modifier.padding(vertical = 6.dp)) {
@@ -470,7 +484,7 @@ fun AboutScreen(onBack: () -> Unit) {
     val stock = remember { stockList(ctx) }
     Scaffold(topBar = { TopAppBar(title = { Text("О приложении") }, navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, "Назад") } }) }) { pad ->
         Column(Modifier.padding(pad).padding(16.dp).verticalScroll(rememberScrollState())) {
-            Text("Открытки 1.0.0", style = MaterialTheme.typography.titleLarge)
+            Text("Банк открыток 1.1.0", style = MaterialTheme.typography.titleLarge)
             Text("Стихи — Иван Воронцов. Картинки, созданные ИИ, по умолчанию помечаются «Создано ИИ».", Modifier.padding(vertical = 8.dp))
             Text("Готовые картинки (общественное достояние / CC0, Wikimedia Commons):", fontWeight = FontWeight.Bold)
             stock.forEach { Text("• ${it.title.removePrefix("File:")} — ${it.license}${if (it.author.isNotBlank()) ", " + it.author else ""}\n  ${it.source}", style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(vertical = 2.dp)) }
