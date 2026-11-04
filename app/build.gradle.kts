@@ -37,8 +37,10 @@ android {
     }
 
     buildTypes {
+        // Debug APK uses Android's standard debug keystore so CI can build
+        // without private release credentials.
         debug {
-            signingConfig = signingConfigs.getByName("upload")
+            // Keep the default debug signing configuration.
         }
         release {
             signingConfig = signingConfigs.getByName("upload")
